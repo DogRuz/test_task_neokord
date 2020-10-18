@@ -21,7 +21,7 @@ def post_form(request):
                 number.save()
             else:
                 fibonancci_number = number.fibonacci_number
-            fibonancci_number = 'Your number: ' + str(fibonancci_number)
+            fibonancci_number = 'Nearest fibonacci number: ' + str(fibonancci_number)
         else:
             fibonancci_number = 'too many'
     else:
