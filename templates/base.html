@@ -1,0 +1,22 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/task.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <p>Test task for neokord</p>
+</head>
+<body>
+<form method="POST" id="form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" name="submit" value="Run" id="submit">
+</form>
+    <p>Max value 92233720368</p>
+
+<p id="new_number"></p>
+
+
+</body>
+
+<script src="{% static 'js/main.js' %}"></script>
